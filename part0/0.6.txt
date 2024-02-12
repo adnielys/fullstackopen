@@ -1,0 +1,8 @@
+sequenceDiagram
+    participant server
+    participant browser 
+    actor user
+
+    user->>browser: Click the "Save" button
+    browser->>server: HTTP POST (new_note_spa)
+    server->>browser: HTTP 201 Created
